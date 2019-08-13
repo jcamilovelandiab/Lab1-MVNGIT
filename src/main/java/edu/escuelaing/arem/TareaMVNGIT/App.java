@@ -18,8 +18,8 @@ public class App
         	list.add_back(data);
         	System.out.println("adding the data: "+data);
         }
-        System.out.println("SUM -> "+list.suma());
-        double mean = (double)list.suma()/(double)list.getSize();
+        System.out.println("SUM -> "+list.sum());
+        double mean = (double)list.sum()/(double)list.getSize();
         System.out.println("MEAN -> "+mean);
         double stDeviation = 0;
         for(int i=0; i<n; i++) {

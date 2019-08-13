@@ -2,6 +2,10 @@ package edu.escuelaing.arem.TareaMVNGIT;
 
 import java.io.*;
 
+/**
+ * 
+ * @author Juan Camilo Velandia Botello
+ */
 public class LinkedList {
 	
 	private Node head;
@@ -12,10 +16,18 @@ public class LinkedList {
 		this.size = 0;
 	}
 	
+	/**
+	 * Obtain the head data
+	 * @return head data
+	 */
 	public int getHead() {
 		return this.head.data;
 	}
 	
+	/**
+	 * Add an element to the linkedlist
+	 * @param data
+	 */
 	public void add_back(int data) {
 		Node new_node = new Node(data);
 		if(this.head == null) {
@@ -30,6 +42,10 @@ public class LinkedList {
 		this.size++;
 	}
 	
+	/**
+	 * Remove the first element with the value of data
+	 * @param data
+	 */
 	public void remove(int data) {
 		Node temp = head;
 		Node prev = null;
@@ -44,6 +60,11 @@ public class LinkedList {
 		}
 	}
 	
+	/**
+	 * Obtain the element's value at the position index
+	 * @param index
+	 * @return data
+	 */
 	public int find(int index) {
 		Node temp = head;
 		for(int i=0; i<index; i++) {
@@ -52,6 +73,9 @@ public class LinkedList {
 		return temp.data;
 	}
 	
+	/**
+	 * Print all elements in the linkedlist
+	 */
 	public void print() {
 		Node temp = head;
 		while(temp != null) {
@@ -61,11 +85,19 @@ public class LinkedList {
 		System.out.println();
 	}
 	
+	/**
+	 * Obtain the linkedlist's size
+	 * @return size
+	 */
 	public int getSize() {
 		return this.size;
 	}
 	
-	public int suma() {
+	/**
+	 * Obtain the sum of all elements in the linkedlist
+	 * @return sum
+	 */
+	public int sum() {
 		int s = 0;
 		Node temp = head;
 		while(temp != null) {
