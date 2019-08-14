@@ -54,8 +54,8 @@ java -cp target/TareaMVNGIT-1.0-SNAPSHOT.jar edu.escuelaing.arem.TareaMVNGIT.App
 
 ## License
 
-This project is under the Apache license - see [LICENSE](LICENSE) for more details.
+This project is under the Apache license - see [LICENSE](LICENSE.md) for more details.
 
 ## Author
 
-Juan Camilo Velandia Botello - Escuela Colombiana de Ingeniería Julio Garavito
+Juan Camilo Velandia Botello - Escuela Colombiana de Ingeniería Julio Garavito.
