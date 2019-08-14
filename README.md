@@ -1,6 +1,6 @@
 # AREM Laboratory #1
 
-In this laboratory a generic linked list was implemented. The mean and standard deviation were calculated based on the linked list elements.
+In this laboratory a generic linked list was implemented. The mean and standard deviation were calculated based on a linked list elements.
 
 ## Prerequisites
 
@@ -22,7 +22,7 @@ The following formulas were used to calculate the mean and standard deviation of
 
 ![](https://github.com/jcamilovelandiab/TareaMVNGIT/blob/master/images/formulas.jpg)
 
-The program takes these values from the file text1.txt.
+The program takes these values from the file test1.txt.
 You can change the data if you want to test the program with another values.
 
 ![](https://github.com/jcamilovelandiab/TareaMVNGIT/blob/master/images/table.PNG)
@@ -31,19 +31,20 @@ You can change the data if you want to test the program with another values.
 ## RUNNING THE PROJECT
 
 To download the project dependencies the following line must be executed.
-
 ```
 mvn package
 ```
-Execute this line to see the java documentation.
 
+Execute this line to see the java documentation.
 ```
 mvn javadoc:jar
 ```
+
 To execute the program the following line must be executed.
 ```
 java -cp target/TareaMVNGIT-1.0-SNAPSHOT.jar edu.escuelaing.arem.TareaMVNGIT.App
 ```
+
 ## RESULTS
 
 ### Mean
