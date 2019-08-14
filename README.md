@@ -52,6 +52,10 @@ java -cp target/TareaMVNGIT-1.0-SNAPSHOT.jar edu.escuelaing.arem.TareaMVNGIT.App
 ![](https://github.com/jcamilovelandiab/TareaMVNGIT/blob/master/images/deviation_results.png)
 
 
-# Author
+## License
+
+This project is under the Apache license - see [LICENSE](LICENSE) for more details.
+
+## Author
 
 Juan Camilo Velandia Botello - Escuela Colombiana de Ingeniería Julio Garavito
