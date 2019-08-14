@@ -4,7 +4,7 @@ In this laboratory a generic linked list was implemented. The mean and standard 
 
 ## Prerequisites
 
-It is necessary to have installed java 1.8 and maven on the computer where the program will run.
+It is necessary to have installed java 1.8 and Apache Maven 3.6.0  on the computer where the program will run.
 
 ## Program description
 
