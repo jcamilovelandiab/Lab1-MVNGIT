@@ -2,6 +2,12 @@
 
 In this laboratory a generic linked list was implemented. The mean and standard deviation were calculated based on the linked list elements.
 
+## Prerequisites
+
+It is necessary to have installed java 1.8 and maven on the computer where the program will run.
+
+## Program description
+
 The linked list was implemented with a Node class. The node class has the following structure:
 
   ![](https://github.com/jcamilovelandiab/TareaMVNGIT/blob/master/images/Node%20structure.png)
