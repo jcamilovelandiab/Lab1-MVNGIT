@@ -3,108 +3,92 @@ package edu.escuelaing.arem.TareaMVNGIT;
 import java.io.*;
 
 /**
- * 
+ * This class is a generic linked list.
  * @author Juan Camilo Velandia Botello
  */
-public class LinkedList {
+public class LinkedList<T> {
 	
-	private Node head;
+	private Node<T> head;
 	private int size;
 	
+	/**  Creates a linked list.
+	 */
 	public LinkedList() {
 		this.head = null;
 		this.size = 0;
 	}
 	
-	/**
-	 * Obtain the head data
-	 * @return head data
+	/** Adds an element to the linked list.
+	 * @param data It is the data that will be added to the list.
 	 */
-	public int getHead() {
-		return this.head.data;
-	}
-	
-	/**
-	 * Add an element to the linkedlist
-	 * @param data
-	 */
-	public void add_back(int data) {
-		Node new_node = new Node(data);
+	public void add_back(T data) {
+		Node<T> new_node = new Node<T>(data);
 		if(this.head == null) {
 			this.head = new_node;
 		}else {
-			Node last = head;
-			while(last.next != null) {
-				last = last.next;
+			Node<T> last = head;
+			while(last.getNext() != null) {
+				last = last.getNext();
 			}
-			last.next = new_node;
+			last.setNext(new_node);
 		}
 		this.size++;
 	}
 	
 	/**
-	 * Remove the first element with the value of data
-	 * @param data
+	 * Removes the first element with the value of data.
+	 * @param data It is the data that will be removed from the list.
 	 */
-	public void remove(int data) {
-		Node temp = head;
-		Node prev = null;
+	public void remove(T data) {
+		Node<T> temp = head;
+		Node<T> prev = null;
 		while(temp != null) {
-			if(temp.data==data) {
+			if(temp.getData()==data) {
 				size--;
-				prev.next=temp.next;
+				prev.setNext(temp.getNext());
 				break;
 			}
 			prev = temp;
-			temp=temp.next;
+			temp=temp.getNext();
 		}
 	}
 	
-	/**
-	 * Obtain the element's value at the position index
-	 * @param index
-	 * @return data
+	/** Obtains the element's value at the position index.
+	 * @param index It is the position.
+	 * @return The data that will be searched on the list.
 	 */
-	public int find(int index) {
-		Node temp = head;
+	public T find(int index) {
+		Node<T> temp = head;
 		for(int i=0; i<index; i++) {
-			temp = temp.next;
+			temp = temp.getNext();
 		}
-		return temp.data;
+		return temp.getData();
 	}
 	
-	/**
-	 * Print all elements in the linkedlist
+	/** Prints all elements in the list.
 	 */
 	public void print() {
-		Node temp = head;
+		Node<T> temp = head;
 		while(temp != null) {
-			System.out.print(" "+temp.data);
-			temp = temp.next;
+			System.out.print(" "+temp.getData());
+			temp = temp.getNext();
 		}
 		System.out.println();
 	}
 	
 	/**
-	 * Obtain the linkedlist's size
-	 * @return size
+	 * Gets the linkedlist's size.
+	 * @return The length of the linked list.
 	 */
 	public int getSize() {
 		return this.size;
 	}
 	
-	/**
-	 * Obtain the sum of all elements in the linkedlist
-	 * @return sum
+	/** Gets the head from the linked list.
+	 * @return The head on the list.
 	 */
-	public int sum() {
-		int s = 0;
-		Node temp = head;
-		while(temp != null) {
-			s+= temp.data;
-			temp = temp.next;
-		}
-		return s;
+	public Node<T> getHead() {
+		return this.head;
 	}
 	
 }
