@@ -59,7 +59,5 @@ This project is under the Apache license - see [LICENSE](LICENSE.md) for more de
 
 ## Author
 
-Juan Camilo Velandia Botello
-Escuela Colombiana de Ingeniería Julio Garavito.
-Colombian School of Engineering Julio Garavito.
+Juan Camilo Velandia Botello - Colombian School of Engineering Julio Garavito.
 
