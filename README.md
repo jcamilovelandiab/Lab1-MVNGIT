@@ -20,7 +20,7 @@ The linked list is composed of a several nodes, and each node has a data and is 
 
 The following formulas were used to calculate the mean and standard deviation of the linked list.
 
-![](https://github.com/jcamilovelandiab/TareaMVNGIT/blob/master/images/formulas.jpg)
+![](https://github.com/jcamilovelandiab/TareaMVNGIT/blob/master/images/formulas.PNG)
 
 The program takes these values from the file test1.txt.
 You can change the data if you want to test the program with another values.
